@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 import User from "../assets/User.svg";
 
 export const AvailablePlayers = ({
@@ -20,8 +21,14 @@ export const AvailablePlayers = ({
   }, []);
 
   const handleChoosePlayer = (player) => {
-    if (pickedPlayer.length === 6) return;
-    if (player.price > coin) return;
+    if (pickedPlayer.length === 6) {
+      toast.error("Maximum players selected!");
+      return;
+    }
+    if (player.price > coin) {
+      toast.error("Not enough coins!");
+      return;
+    }
     setPickedPlayer([...pickedPlayer, player]);
     setCoin(coin - player.price);
   };

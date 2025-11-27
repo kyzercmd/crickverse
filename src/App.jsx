@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
 import { Header } from "./components/Header";
 import { Banner } from "./components/Banner";
 import { Footer } from "./components/Footer";
@@ -57,6 +58,18 @@ function App() {
         />
       )}
       <Footer />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 }
