@@ -26,7 +26,7 @@ export const Footer = () => {
               placeholder="Enter your email"
               className="border rounded-xl text-base py-3 px-6"
             ></input>
-            <span className="hover:cursor-pointer text-base font-bold bg-[#E7FE29]  py-3 px-6 rounded-xl ml-4 border">
+            <span className="hover:cursor-pointer text-base font-bold bg-[#E7FE29]  py-3 px-6 rounded-xl ml-4 border hover:shadow-xl">
               Subscribe
             </span>
           </div>
