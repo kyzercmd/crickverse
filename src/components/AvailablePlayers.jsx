@@ -12,9 +12,9 @@ export const AvailablePlayers = ({
 
   useEffect(() => {
     const loadPlayers = async () => {
-      const res = await fetch("http://localhost:3000/players");
+      const res = await fetch("/db.json");
       const data = await res.json();
-      setPlayers(data);
+      setPlayers(data.players);
     };
 
     loadPlayers();

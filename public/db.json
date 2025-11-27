@@ -1,21 +1,4 @@
 {
-  "rules": {
-    "teamSize": 11,
-    "budgetCoins": 5000000,
-    "minByRole": {
-      "wicketkeeper": 1,
-      "batsman": 3,
-      "bowler": 3,
-      "allrounder": 1
-    },
-    "maxPlayersFromOneCountry": 7,
-    "maxFiveStarPlayers": 3,
-    "starPrice": {
-      "5": 1000000,
-      "4": 500000,
-      "3": 200000
-    }
-  },
   "players": [
     {
       "id": 1,
