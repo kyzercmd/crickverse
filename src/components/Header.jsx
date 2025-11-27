@@ -28,7 +28,7 @@ export const Header = ({ coin }) => {
         </div>
         <div>
 
-          <span className="text-xs md:py-2 md:px-4 md:mr-3 text-slate-700 hover:cursor-pointer inline-flex items-center gap-2 border border-slate-200 rounded-xl font-bold hover:shadow-xs hover:border-slate-300">
+          <span className=" py-2 px-4 md:mr-3 text-slate-700 hover:cursor-pointer inline-flex items-center gap-2 border border-slate-200 rounded-xl font-bold hover:shadow-xs hover:border-slate-300">
             {coin} coin <img className="w-6 h-6 " src={Coin} alt="coin"></img>
           </span>
         </div>
