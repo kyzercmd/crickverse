@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import { Header } from "./components/Header";
 import { Banner } from "./components/Banner";
+import { Footer } from "./components/Footer";
 import { AvailablePlayers } from "./components/AvailablePlayers";
 import { SelectedPlayers } from "./components/SelectedPlayers";
 
@@ -9,12 +10,13 @@ function App() {
   const [coin, setCoin] = useState(5000000);
   const [toggle, setToggle] = useState(true);
   const [pickedPlayer, setPickedPlayer] = useState([]);
+
   return (
     <>
       <Header coin={coin} setCoin={setCoin} />
       <Banner />
       <div className="max-w-6xl m-auto mt-20 flex justify-between items-center">
-        <div className="font-bold text-2xl">
+        <div className="font-bold text-2xl text-slate-800">
           {toggle
             ? "Available Players"
             : `Selected Players (${pickedPlayer.length}/6)`}
@@ -51,8 +53,10 @@ function App() {
           setPickedPlayer={setPickedPlayer}
           coin={coin}
           setCoin={setCoin}
+          setToggle={setToggle}
         />
       )}
+      <Footer />
     </>
   );
 }

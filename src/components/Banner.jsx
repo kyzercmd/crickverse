@@ -18,7 +18,7 @@ export const Banner = () => {
         </span>
 
         <div className="flex justify-center items-center border border-[#E7FE29] py-2 px-2 rounded-xl mt-5">
-          <span className="bg-[#E7FE29] py-4 px-7  rounded-xl text-sm font-bold">
+          <span className="bg-[#E7FE29] hover:cursor-pointer py-4 px-7  rounded-xl text-sm font-bold">
             Claim Free Credit
           </span>
         </div>

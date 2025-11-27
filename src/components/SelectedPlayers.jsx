@@ -5,9 +5,8 @@ export const SelectedPlayers = ({
   setPickedPlayer,
   coin,
   setCoin,
+  setToggle,
 }) => {
-  console.log(pickedPlayer);
-
   const handleDelete = (delPlayer) => {
     const updatedPickedPlayer = pickedPlayer.filter(
       (player) => player.name != delPlayer.name
@@ -44,6 +43,18 @@ export const SelectedPlayers = ({
           </div>
         </div>
       ))}
+      <div className="max-w-[1120px] m-auto mt-5">
+        <div className="flex h-17 w-50 items-center border border-slate-400 py-2 px-2 rounded-xl shadow-sm">
+          <span
+            onClick={() => {
+              setToggle(true);
+            }}
+            className="hover:cursor-pointer text-sm font-semibold bg-[#E7FE29] py-3 px-6 rounded-xl m-auto border border-slate-200 hover:shadow-sm"
+          >
+            Add More Players
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
