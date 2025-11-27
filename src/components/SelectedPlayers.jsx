@@ -16,10 +16,10 @@ export const SelectedPlayers = ({
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 min-h-screen md:min-h-auto">
       {pickedPlayer.map((player) => (
         <div key={player.id}>
-          <div className="max-w-[1120px] m-auto border border-slate-300 hover:bg-gray-50 flex justify-between px-6 py-4 my-3 rounded-2xl shadow-sm">
+          <div className="max-w-[1120px]  mx-auto border border-slate-300 hover:bg-gray-50 flex justify-between px-6 py-4 my-3 rounded-2xl shadow-sm">
             <div className="flex">
               <img
                 className="w-20 h-20 object-cover rounded-2xl mr-5"

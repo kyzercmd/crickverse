@@ -16,7 +16,7 @@ function App() {
     <>
       <Header coin={coin} setCoin={setCoin} />
       <Banner />
-      <div className="max-w-6xl m-auto mt-20 flex justify-between items-center">
+      <div className="max-w-6xl m-auto mt-20 flex flex-col gap-2 md:flex-row justify-between items-center">
         <div className="font-bold text-2xl text-slate-800">
           {toggle
             ? "Available Players"
